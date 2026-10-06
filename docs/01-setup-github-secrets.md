@@ -26,6 +26,6 @@ The workflows default to `us-east-1`. If your lab uses another region, change `A
 ## Troubleshooting
 
 - **SignatureDoesNotMatch / invalid token**: the keys were swapped, have stray whitespace, or the lab session expired. Re-copy them and update the secrets.
-- If your lab provides a **session token** as well, add an `AWS_SESSION_TOKEN` secret and pass `aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}` in the "Configure AWS credentials" step of both workflows.
+- If your lab provides a **session token** as well, add an `AWS_SESSION_TOKEN` secret. The workflow passes it automatically.
 
 Next: [02 - Deploy and connect](02-deploy-and-connect.md)
